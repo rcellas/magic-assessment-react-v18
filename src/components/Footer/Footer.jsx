@@ -1,8 +1,10 @@
-import React from 'react'
+import "./Footer.css"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <p>&copy; 1993-2023 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved.</p>
+    </footer>
   )
 }
 

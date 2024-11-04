@@ -1,15 +1,21 @@
-import React from 'react'
+import "./CardDetail.css"
 
-function CardDetail({card}) {
+function CardDetail({ card }) {
   return (
-    <div>
+    card.imageUrl ? (
+      <div className="card">
         <img src={card.imageUrl} alt={card.name} />
         <h2>{card.name}</h2>
-        <h3>Type</h3>
-        <p>{card.type}</p>
-        <h3>Description</h3>
-        <p>{card.text}</p>
-    </div>
+        <div className="type">
+          <h3>Type</h3>
+          <p>{card.type}</p>
+        </div>
+        <div className="description">
+          <h3>Description</h3>
+          <p>{card.text}</p>
+        </div>
+      </div>
+    ) : null
   )
 }
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import CardDetail from '../CardDetail/CardDetail'
+import { useState,useEffect } from 'react'
+import "./Card.css"
 
 function Cards() {
       const [cards, setCards]=useState([])
@@ -13,13 +15,15 @@ function Cards() {
     .catch(error => console.log("Mensaje de error: ", error))
     }
   return (
-    <div>
+    <article>
         {
             cards.map((card)=>{
-                <CardDetail card={card}/>
+                return(
+                  <CardDetail card={card}/>
+                )
             })
         }
-        </div>
+    </article>
   )
 }
 
