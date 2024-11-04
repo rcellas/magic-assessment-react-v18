@@ -1,0 +1,12 @@
+.btn-showMore{
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+}
