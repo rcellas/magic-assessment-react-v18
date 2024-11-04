@@ -1,6 +1,5 @@
-import React from 'react'
-import CardDetail from '../CardDetail/CardDetail'
 import { useState,useEffect } from 'react'
+import CardDetail from '../CardDetail/CardDetail'
 import "./Card.css"
 
 function Cards() {
