@@ -17,7 +17,8 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/cards/:cardId",
-                element:<CardsDetailsPages/>
+                element:<CardsDetailsPages/>,
+                loader:useCard
             }
         ]
     }

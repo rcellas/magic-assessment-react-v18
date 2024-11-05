@@ -1,0 +1,14 @@
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 8rem;
+    .cardInfo-img{
+        margin: 0 4rem;
+    }
+    article{
+       display:block;
+       .cardInfo-box{
+        margin: 1.2rem 0;
+       }
+    }
+}

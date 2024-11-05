@@ -4,7 +4,7 @@ import CardInfo from '../../components/CardInfo/CardInfo'
 function CardsDetailsPages() {
     const {cardId}= useParams()
     return (
-        <CardInfo card={cardId}/>
+        <CardInfo cardId={cardId}/>
     )
 }
 

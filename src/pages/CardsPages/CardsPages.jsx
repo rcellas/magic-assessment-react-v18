@@ -4,7 +4,7 @@ import "./CardsPages.css"
 
 function CardsPages() {
   return (
-    <section>
+    <section className='cardsPages'>
         <h1>Cards</h1>
         <Cards/>
     </section>
