@@ -13,7 +13,7 @@ function CardDetail({ card }) {
         <div className="setName">
           <p>{card.setName}</p>
         </div>
-        <ShowMore/>
+        <ShowMore cardId={card.id}/>
       </div>
     ) : null
   )

@@ -1,18 +1,10 @@
 import { useState,useEffect } from 'react'
 import CardDetail from '../CardDetail/CardDetail'
 import "./Card.css"
+import { useLoaderData } from 'react-router-dom'
 
 function Cards() {
-      const [cards, setCards]=useState([])
-  useEffect(()=>{
-     getData()
-  },[])
-  const getData = () => {
-    fetch("https://api.magicthegathering.io/v1/cards")
-    .then(response => response.json())
-    .then((data)=>setCards(data.cards))
-    .catch(error => console.log("Mensaje de error: ", error))
-    }
+  const cards = useLoaderData()
   return (
     <article>
         {

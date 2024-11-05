@@ -1,7 +1,16 @@
+
+import { useNavigate } from "react-router-dom"
 import "./ShowMore.css"
-function ShowMore() {
+function ShowMore(cardId) {
+  console.log(cardId)
+  const navigate = useNavigate();
+  
+  const handleRedirect = (productId) => {
+    navigate(`/cards/${productId}`);
+  };
+
   return (
-    <button className='btn-showMore'>Show More</button>
+    <button className='btn-showMore' onClick={()=>handleRedirect(cardId.cardId)}>Show More</button>
   )
 }
 

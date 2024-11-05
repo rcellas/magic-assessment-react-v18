@@ -7,11 +7,6 @@ function App() {
 
   return (
     <>
-     <Header/>
-     <main>
-      <CardsPages/>
-     </main>
-     <Footer/>
     </>
   )
 }
