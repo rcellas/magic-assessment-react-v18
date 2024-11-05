@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png"
 import "./Header.css"
 
@@ -17,7 +18,7 @@ function Header() {
       </button>
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><NavLink to="/">Inicio</NavLink></li>
           <li><a href="#">Favoritos</a></li>
           <li><a href="#">Tipos</a></li>
           <li><a href="#">Contacto</a></li>
